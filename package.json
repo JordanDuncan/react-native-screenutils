@@ -1,0 +1,27 @@
+{
+  "name": "react-native-screenutils",
+  "version": "1.0.0",
+  "description": "Helpers for dealing with changes in sizes for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "screen",
+    "utils",
+    "sizing"
+  ],
+  "author": "Jordan Duncan",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
