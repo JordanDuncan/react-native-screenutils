@@ -22,7 +22,7 @@ This module exposes a screen state object via various means. The object is struc
   width, // Screen Width in pt (number)
     height, // Screen Height in pt (number)
     orientation, // Orientation (see Values.OrientationValues) (string)
-    layout, // Layout Type (see Values.LayoutValues) (string)
+    layoutType, // Layout Type (see Values.LayoutValues) (string)
     fontScale; // Font Scale, default is 1 (number)
 }
 ```
@@ -69,7 +69,7 @@ const App = () => {
     <View>
       <ScreenProvider>
         <ScreenConsumer>
-          {({ width, height, orientation, layout, fontScale }) => (
+          {({ width, height, orientation, layoutType, fontScale }) => (
             <Text>{"Screen width: " + width}</Text>
           )}
         </ScreenConsumer>
